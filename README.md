@@ -25,6 +25,8 @@ Frontend Mentor 挑战通过构建实际项目帮助你提升编程技能。
 #### 移动端
 
 ![image_app](./image/image.png)
+
+
 你可以在 `images` 文件夹中查看项目截图或实际效果图。
 
 ### 链接
