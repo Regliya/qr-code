@@ -26,11 +26,12 @@ Frontend Mentor 挑战通过构建实际项目帮助你提升编程技能。
 
 ![image_app](./image/image.png)
 
-
 你可以在 `images` 文件夹中查看项目截图或实际效果图。
 
 ### 链接
+
 - 在线演示： https://regliya.github.io/qr-code/
+
 ## 实现过程
 
 ### 使用的技术
@@ -71,9 +72,9 @@ Frontend Mentor 挑战通过构建实际项目帮助你提升编程技能。
 
 .text-preset-1 {
   font-family: var(--font-family); 
-  font-weight: bold;         
-  font-size: 22px;           
-  line-height: 1.2;          
+  font-weight: bold;       
+  font-size: 22px;         
+  line-height: 1.2;        
   letter-spacing: 0px;
   color: var(--Slate-900);   
 }

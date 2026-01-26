@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     max-width: 375px;
-    height: 750px;
+    height: 812px;
     background-color: var(--Slate-300);
     display: flex;
     justify-content: center;
@@ -10,10 +10,11 @@
 
 .content{
     width: 320px;
-    height: 490px;
+    height: 499px;
     background-color: var(--White);
     border-radius: 20px;
     padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200) ;
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,4.77%);
 }
 
 .qr-code{
@@ -22,7 +23,7 @@
     overflow: hidden;
     text-align: center;
     img{
-        border-radius: 10px;
+        border-radius:  10px;
         width: 288px;
         height: 288px;        
         object-fit: cover;

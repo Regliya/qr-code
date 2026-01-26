@@ -25,17 +25,17 @@ body {
     --spacing-500: 40px;  
     --spacing-300: 24px;  
     --spacing-200: 16px;
-    --font-family: 'Outfit', sans-serif;  
-}
-
+    --font-family: 'Outfit';  
+} 
+     
 @font-face {
   font-family: 'Outfit';
   src: url('./fonts/Outfit-Regular.ttf');
-}
+}     
 
 .text-preset-1 {
   font-family: var(--font-family); 
-  font-weight: bold;                 
+  font-weight: bold;                  
   font-size: 22px;                   
   line-height: 1.2;                  
   letter-spacing: 0px;
@@ -44,9 +44,9 @@ body {
 
 .text-preset-2{
     font-family: var(--font-family);
-    font-weight: normal;
+    font-weight: Regular;
     font-size: 15px;
     line-height: 1.4;
     letter-spacing: 0.2px;
     color: var(--Slate-500);
-}
+} 
