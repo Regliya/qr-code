@@ -30,7 +30,7 @@ body {
      
 @font-face {
   font-family: 'Outfit';
-  src: url('./fonts/Outfit-Regular.ttf');
+  src: url('../font/Outfit-VariableFont_wght.ttf');
 }     
 
 .text-preset-1 {

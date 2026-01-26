@@ -28,10 +28,30 @@
         height: 288px;        
         object-fit: cover;
     }
-    .text-preset-1{
+
+    .text-box{
+        height: 131px;
+        width: 288px;
         margin-top: var(--spacing-300);
-        margin-bottom: var(--spacing-200);
+        padding: 0 16px;
+
+        .title-box{
+            height: 52px;
+            width: 256px;
+            text-align: center;
+            vertical-align:top;
+            margin-bottom: var(--spacing-200);
+        }
+
+        .content-box{
+            height: 63px;
+            width: 256px;
+            text-align: center;
+            vertical-align:top;
+        }
     }
+    
+
 }
 
 @media (min-width: 1440px) {
