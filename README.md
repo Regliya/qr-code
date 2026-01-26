@@ -1,105 +1,99 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - QR 二维码组件解决方案
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+这是针对[Frontend Mentor 上的 QR 二维码组件挑战](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) 的解决方案。
 
-## Table of contents
+Frontend Mentor 挑战通过构建实际项目帮助你提升编程技能。
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+## 目录
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [概览](#概览)
+  - [截图](#截图)
+- [实现过程](#实现过程)
+  - [使用的技术](#使用的技术)
+  - [我学到了什么](#学到了什么)
+  - [未来可以继续优化的方向](#未来可以继续优化的方向)
 
-## Overview
+## 概览
 
-### Screenshot
+### 截图
 
-![](./screenshot.jpg)
+#### pc端
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![image_pc](./image/image_pc.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+#### 移动端
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![image_app](./image/image.png)
+你可以在 `images` 文件夹中查看项目截图或实际效果图。
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+## 实现过程
 
-### Links
+### 使用的技术
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+* 语义化 HTML5 标签
+* CSS 自定义属性（CSS Variables）
+* Flexbox 布局
+* 响应式设计（移动端优先）
+* 自定义字体引入（Outfit）
+* CSS 重置与全局样式规范化
 
-## My process
+### 学到了什么
 
-### Built with
+通过这个项目，我更加熟悉了以下内容：
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+* 如何使用 `@font-face` 引入自定义字体，并设置备用字体栈
+* 如何通过 CSS 变量（`:root`）统一管理颜色、间距和字体，便于维护
+* 如何使用 Flexbox 实现水平和垂直居中
+* 如何编写响应式布局，从移动端（375px）扩展到桌面端（1440px）
+* 如何使用 CSS 重置来确保跨浏览器样式一致性
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+以下是一些关键代码片段:
 
-### What I learned
+```css
+:root {
+  --Slate-900: #1F314F;
+  --Slate-500: #68778D;
+  --Slate-300: #D5E1EF;
+  --White: #FFFFFF;
+  --spacing-500: 40px;
+  --font-family: 'Outfit', sans-serif;
+}
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/Outfit-Regular.ttf');
+}
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+.text-preset-1 {
+  font-family: var(--font-family); 
+  font-weight: bold;         
+  font-size: 22px;           
+  line-height: 1.2;          
+  letter-spacing: 0px;
+  color: var(--Slate-900);   
+}
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.container {
+    width: 100%;
+    max-width: 375px;
+    height: 750px;
+    background-color: var(--Slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1440px) {
+    .container{
+        max-width: 1440px;
+        height: 960px;
+    }
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+### 未来可以继续优化的方向
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+* 可以考虑使用其他响应式设计实现
+* 可以进一步优化字体加载策略，提升网页性能
