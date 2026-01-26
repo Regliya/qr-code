@@ -20,11 +20,11 @@ Frontend Mentor 挑战通过构建实际项目帮助你提升编程技能。
 
 #### pc端
 
-![image_pc](./image/image_pc.png)
+![image_pc](./image/image_Desktop.png)
 
 #### 移动端
 
-![image_app](./image/image.png)
+![image_app](./image/image_Mobile.png)
 
 你可以在 `images` 文件夹中查看项目截图或实际效果图。
 
