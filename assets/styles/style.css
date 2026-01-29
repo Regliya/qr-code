@@ -8,54 +8,43 @@
     align-items: center;
 }
 
-.content{
+.content {
     width: 320px;
     height: 499px;
     background-color: var(--White);
     border-radius: 20px;
-    padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200) ;
-    box-shadow: 0 25px 25px 0 rgba(0,0,0,4.77%);
-}
+    padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200);
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 4.77%);
 
-.qr-code{
-    display: flex;
-    flex-direction: column;    
-    overflow: hidden;
-    text-align: center;
-    img{
-        border-radius:  10px;
+    img {
         width: 288px;
-        height: 288px;        
+        height: 288px;
+        border-radius: 10px;
         object-fit: cover;
     }
 
-    .text-box{
-        height: 131px;
-        width: 288px;
+    .text-box {
+        text-align: center;
+        vertical-align: top;
         margin-top: var(--spacing-300);
-        padding: 0 16px;
+        padding: 0 var(--spacing-200);
 
-        .title-box{
+        h1 {
             height: 52px;
             width: 256px;
-            text-align: center;
-            vertical-align:top;
             margin-bottom: var(--spacing-200);
         }
 
-        .content-box{
+        p {
             height: 63px;
             width: 256px;
-            text-align: center;
-            vertical-align:top;
         }
-    }
-    
 
+    }
 }
 
 @media (min-width: 1440px) {
-    .container{
+    .container {
         max-width: 1440px;
         height: 960px;
     }

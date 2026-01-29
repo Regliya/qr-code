@@ -2,15 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- 控制移动端视口的行为 
+    content="width=device-width,  视口宽度=设备宽度
+            initial-scale=1.0,    初始缩放=不缩放
+            maximum-scale=1.0,    可选：禁止缩放
+            user-scalable=no">    可选：禁止用户缩放 
+    -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <!-- 老浏览器ico适配 -->
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png" />
 
     <title>Frontend Mentor | QR code component</title>
     <link rel="stylesheet" href="./assets/styles/common.css" />
@@ -22,22 +25,19 @@
     <main>
       <div class="container">
         <div class="content">
-          <div class="qr-code">
-            <img src="./assets/images/image-qr-code.png" alt="QR Code" />
-            <div class="text-box">
-              <div class="title-box">
-                <h1 class="text-preset-1">
-                  Improve your front-end skills by building projects
-                </h1>
-              </div>
-              <div class="content-box">
-                <p class="text-preset-2">
-                  Scan the QR code to visit Frontend Mentor and take your coding
-                  skills to the next level
-                </p>
-              </div>
-            </div>
-          </div>
+          <img src="./assets/images/image-qr-code.png" alt="QR Code" />
+
+          <!-- 添加article 元素,删除冗余内容 -->
+          <article class="text-box">
+            <h1 class="text-preset-1">
+              Improve your front-end skills by building projects
+            </h1>
+            <p class="text-preset-2">
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </article>
+
         </div>
       </div>
     </main>
